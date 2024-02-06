@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct DynamicText: View {
+public struct DynamicText: View {
     
     var content: String
     
@@ -22,7 +22,7 @@ struct DynamicText: View {
     
     var textAlignment: NSTextAlignment
     
-    init(_ content: String, weight: UIFont.Weight = .regular, lineCount: Int = 1, kern: CGFloat = 0, linespacing: CGFloat = 5, textAlignment: NSTextAlignment = .left) {
+    public init(_ content: String, weight: UIFont.Weight = .regular, lineCount: Int = 1, kern: CGFloat = 0, linespacing: CGFloat = 5, textAlignment: NSTextAlignment = .left) {
         self.content = content
         self.weight = weight
         self.lineCount = lineCount
@@ -31,7 +31,7 @@ struct DynamicText: View {
         self.textAlignment = textAlignment
     }
     
-    var body: some View {
+    public var body: some View {
         
         GeometryReader { geo in
             
